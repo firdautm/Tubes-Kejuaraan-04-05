@@ -78,7 +78,6 @@ void deletePeserta(ListPeserta &LP, ListKejuaraan &LK, int id) {
     cout << "Peserta berhasil dihapus\n";
 }
 
-/* ================= KEJUARAAN ================= */
 adrKejuaraan createKejuaraan(int kode, string nama, string level) {
     adrKejuaraan K = new ElmKejuaraan;
     K->info.kode = kode;
@@ -133,7 +132,6 @@ void deleteKejuaraan(ListKejuaraan &LK, int kode) {
     cout << "Kejuaraan berhasil dihapus\n";
 }
 
-/* ================= RELASI ================= */
 void addRelasi(ListKejuaraan &LK, int kodeKejuaraan, adrPeserta P) {
     adrKejuaraan K = findKejuaraan(LK, kodeKejuaraan);
     if (K == NULL) return;
@@ -155,7 +153,6 @@ void addRelasi(ListKejuaraan &LK, int kodeKejuaraan, adrPeserta P) {
     cout << "Relasi berhasil ditambahkan\n";
 }
 
-/* ================= DISPLAY ================= */
 void showAllPeserta(ListPeserta LP, ListKejuaraan LK) {
     adrPeserta P = LP.first;
 
@@ -248,7 +245,7 @@ void showKejuaraanByPeserta(ListKejuaraan LK, int id) {
     cout << endl;
 }
 
-/* ================= STATISTIK ================= */
+
 void showStatistik(ListPeserta LP, ListKejuaraan LK) {
     adrKejuaraan K = LK.first;
     int max = -1;
@@ -301,3 +298,4 @@ void showStatistik(ListPeserta LP, ListKejuaraan LK) {
         cout << "Peserta yang paling sedikit mengikuti kejuaraan adalah: "
              << palingSedikit << endl;
 }
+
