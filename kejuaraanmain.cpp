@@ -25,17 +25,16 @@ int main() {
 
         if (pilih == 1) {
             int id, umur;
-            string nama;
+            string nama, asal;
             cout << "ID Peserta: ";
             cin >> id;
             cout << "Nama Peserta: ";
             cin >> nama;
-           string asal;
-           cout << "Asal Peserta: ";
-           cin >> asal;
+            cout << "Asal Peserta: ";
+            cin >> asal;
 
 
-            insertPesertaLast(LP, createPeserta(id, nama, umur));
+            insertPesertaLast(LP, createPeserta(id, nama, asal));
         }
 
         else if (pilih == 2) {
@@ -107,3 +106,4 @@ int main() {
 
     return 0;
 }
+
