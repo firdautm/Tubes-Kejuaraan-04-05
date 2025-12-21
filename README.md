@@ -499,6 +499,9 @@ if (pilih == 1) {
             cin >> id;
             cout << "Nama Peserta: ";
             cin >> nama;
+            cout << "Asal Peserta: ";
+            cin >> asal;
+
 
 
             insertPesertaLast(LP, createPeserta(id, nama, asal));
