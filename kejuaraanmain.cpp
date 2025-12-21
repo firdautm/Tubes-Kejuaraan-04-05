@@ -24,7 +24,7 @@ int main() {
         cin >> pilih;
 
         if (pilih == 1) {
-            int id, umur;
+            int id;
             string nama, asal;
             cout << "ID Peserta: ";
             cin >> id;
@@ -106,4 +106,5 @@ int main() {
 
     return 0;
 }
+
 
