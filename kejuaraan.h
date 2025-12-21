@@ -49,7 +49,7 @@ struct ListKejuaraan {
 
 void createListPeserta(ListPeserta &LP);
 void createListKejuaraan(ListKejuaraan &LK);
-adrPeserta createPeserta(int id, string nama, int umur);
+adrPeserta createPeserta(int id, string nama, string asal);
 void insertPesertaLast(ListPeserta &LP, adrPeserta P);
 adrPeserta findPeserta(ListPeserta LP, int id);
 void deletePeserta(ListPeserta &LP, ListKejuaraan &LK, int id);
@@ -64,4 +64,5 @@ void showKejuaraanByPeserta(ListKejuaraan LK, int id);
 void showStatistik(ListPeserta LP, ListKejuaraan LK);
 
 #endif
+
 
