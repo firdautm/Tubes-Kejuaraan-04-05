@@ -51,7 +51,7 @@ Struktur ini memungkinkan satu peserta mengikuti banyak kejuaraan, sehingga memb
 ```cpp
 void createListPeserta(ListPeserta &LP);
 void createListKejuaraan(ListKejuaraan &LK);
-adrPeserta createPeserta(int id, string nama, int umur);
+adrPeserta createPeserta(int id, string nama, string asal);
 void insertPesertaLast(ListPeserta &LP, adrPeserta P);
 adrPeserta findPeserta(ListPeserta LP, int id);
 void deletePeserta(ListPeserta &LP, ListKejuaraan &LK, int id);
@@ -493,18 +493,15 @@ do {
 ## Pilihan-pilihan
 ```cpp
 if (pilih == 1) {
-            int id, umur;
-            string nama;
+            int id
+            string nama, asal;
             cout << "ID Peserta: ";
             cin >> id;
             cout << "Nama Peserta: ";
             cin >> nama;
-           string asal;
-           cout << "Asal Peserta: ";
-           cin >> asal;
 
 
-            insertPesertaLast(LP, createPeserta(id, nama, umur));
+            insertPesertaLast(LP, createPeserta(id, nama, asal));
         }
 
         else if (pilih == 2) {
